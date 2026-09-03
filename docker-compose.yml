@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql
+    container_name: my-compose-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    volumes:
+      - compose-mysql-data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+volumes:
+   compose-mysql-data: 
+
