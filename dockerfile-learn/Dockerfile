@@ -1,3 +1,4 @@
-FROM ubuntu
-COPY myfile.txt /myfile.txt
-CMD cat /myfile.txt 
+From ubuntu 
+WORKDIR /Demo
+COPY sonu.txt .
+CMD cat sonu.txt
