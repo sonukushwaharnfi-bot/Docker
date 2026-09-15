@@ -1,0 +1,6 @@
+FROM python:3.9-slim
+WORKDIR /app
+COPY app.py .
+ARG BUILD_VERSION=1.0
+ENV APP_NAME="Sonu's Python App v${BUILD_VERSION}"
+CMD ["python3", "app.py"]
